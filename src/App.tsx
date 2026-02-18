@@ -7,6 +7,7 @@ import About from './Pages/About'
 import Gallery from './Pages/Gallery'
 import Contact from './Pages/Contact'
 import Films from './Pages/Films'
+import Awards from './Pages/Awards' // Added Import
 function App() {
 
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/films" element={<Films />} />
+          <Route path="/awards" element={<Awards />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>

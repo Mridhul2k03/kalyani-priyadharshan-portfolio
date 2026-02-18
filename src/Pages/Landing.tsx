@@ -1,4 +1,4 @@
-import { Play, Info, Star, Award, Users } from "lucide-react";
+import { Play, Info } from "lucide-react";
 
 const Landing = () => {
     return (

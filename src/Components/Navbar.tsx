@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X, ChevronDown, Film, PlayCircle, ArrowRight } from "lucide-react";
+import { Menu, X, ChevronDown, PlayCircle, ArrowRight } from "lucide-react";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -40,7 +40,7 @@ const Navbar = () => {
         { name: "About", to: "/about" },
         { name: "Films", to: "/films", hasDropdown: true },
         { name: "Gallery", to: "/gallery" },
-        { name: "Awards", to: "#" },
+        { name: "Awards", to: "/awards" },
         { name: "Contact", to: "/contact" },
     ];
 

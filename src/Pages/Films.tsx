@@ -1,5 +1,5 @@
 
-import { Play, Star, Calendar, Clock, Award } from 'lucide-react';
+import { Star, Calendar, Award } from 'lucide-react';
 
 const Films = () => {
     const films = [
