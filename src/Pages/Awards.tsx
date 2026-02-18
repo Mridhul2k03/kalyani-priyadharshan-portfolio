@@ -1,5 +1,6 @@
 
 import { Award, Trophy, Star, Medal, Crown } from 'lucide-react';
+import Reveal from '../Components/Reveal';
 
 const Awards = () => {
     const awards = [
@@ -65,48 +66,50 @@ const Awards = () => {
         <div className="pt-20 overflow-x-hidden relative">
             <div className="container mx-auto px-4 py-16 relative z-10">
                 {/* Header */}
-                <div className="text-center mb-20 animate-in fade-in slide-in-from-bottom-8 duration-700">
-                    <div className="inline-flex items-center justify-center p-3 rounded-full bg-primary/10 mb-6 ring-1 ring-primary/30">
-                        <Trophy className="h-6 w-6 text-primary mr-2" />
-                        <span className="text-primary font-bold tracking-widest uppercase text-sm">Hall of Fame</span>
+                <Reveal>
+                    <div className="text-center mb-20">
+                        <div className="inline-flex items-center justify-center p-3 rounded-full bg-primary/10 mb-6 ring-1 ring-primary/30">
+                            <Trophy className="h-6 w-6 text-primary mr-2" />
+                            <span className="text-primary font-bold tracking-widest uppercase text-sm">Hall of Fame</span>
+                        </div>
+                        <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tight">
+                            AWARDS & <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 via-yellow-500 to-yellow-200">RECOGNITION</span>
+                        </h1>
+                        <p className="text-xl text-gray-400 max-w-2xl mx-auto font-light">
+                            Celebrating excellence in cinema and the art of storytelling.
+                        </p>
                     </div>
-                    <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tight">
-                        AWARDS & <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 via-yellow-500 to-yellow-200">RECOGNITION</span>
-                    </h1>
-                    <p className="text-xl text-gray-400 max-w-2xl mx-auto font-light">
-                        Celebrating excellence in cinema and the art of storytelling.
-                    </p>
-                </div>
+                </Reveal>
 
                 {/* Awards Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
                     {awards.map((item, index) => (
-                        <div
-                            key={index}
-                            className="bg-zinc-900/50 backdrop-blur-md border border-white/5 rounded-xl p-8 hover:border-primary/30 transition-all duration-300 hover:bg-zinc-900/80 group animate-in fade-in slide-in-from-bottom-4 fill-mode-both"
-                            style={{ animationDelay: `${index * 100}ms` }}
-                        >
-                            <div className="flex items-start gap-6">
-                                <div className="p-4 rounded-full bg-black/50 border border-white/10 shadow-xl group-hover:scale-110 transition-transform duration-300">
-                                    {item.icon}
-                                </div>
-                                <div className="flex-1">
-                                    <div className="flex justify-between items-start mb-2">
-                                        <h3 className="text-xl font-bold text-white group-hover:text-primary transition-colors">{item.award}</h3>
-                                        <span className="text-sm font-mono text-gray-500 bg-white/5 px-2 py-1 rounded">{item.year}</span>
+                        <Reveal key={index} delay={index * 100}>
+                            <div
+                                className="bg-zinc-900/50 backdrop-blur-md border border-white/5 rounded-xl p-8 hover:border-primary/30 transition-all duration-300 hover:bg-zinc-900/80 group"
+                            >
+                                <div className="flex items-start gap-6">
+                                    <div className="p-4 rounded-full bg-black/50 border border-white/10 shadow-xl group-hover:scale-110 transition-transform duration-300">
+                                        {item.icon}
                                     </div>
-                                    <p className="text-lg text-gray-300 mb-1">{item.category}</p>
-                                    <p className="text-sm text-gray-500">
-                                        For <span className="text-white font-medium italic">{item.work}</span>
-                                    </p>
+                                    <div className="flex-1">
+                                        <div className="flex justify-between items-start mb-2">
+                                            <h3 className="text-xl font-bold text-white group-hover:text-primary transition-colors">{item.award}</h3>
+                                            <span className="text-sm font-mono text-gray-500 bg-white/5 px-2 py-1 rounded">{item.year}</span>
+                                        </div>
+                                        <p className="text-lg text-gray-300 mb-1">{item.category}</p>
+                                        <p className="text-sm text-gray-500">
+                                            For <span className="text-white font-medium italic">{item.work}</span>
+                                        </p>
 
-                                    <div className="mt-6 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-yellow-500 bg-yellow-500/10 px-3 py-1 rounded-full">
-                                        <Trophy className="h-3 w-3" />
-                                        {item.result}
+                                        <div className="mt-6 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-yellow-500 bg-yellow-500/10 px-3 py-1 rounded-full">
+                                            <Trophy className="h-3 w-3" />
+                                            {item.result}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </Reveal>
                     ))}
                 </div>
             </div>
