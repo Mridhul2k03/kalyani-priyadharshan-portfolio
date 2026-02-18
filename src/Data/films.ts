@@ -22,7 +22,7 @@ export const films = [
         role: "Priya",
         year: "2024",
         genre: "Sci-Fi Thriller",
-        trailer: "https://www.youtube.com/embed/OO2HWSMIKxI",
+        trailer: "https://www.youtube.com/embed/dfK4zEk5cVk",
         status: "Post-Production",
         description: "In a world where memories can be traded, a young woman discovers a conspiracy that threatens reality itself.",
         fullDescription: "Genie is a mind-bending sci-fi thriller featuring Jayam Ravi and Kalyani Priyadarshan. The film delves into a futuristic society where human memories can be extracted and traded as commodities. Kalyani plays Priya, a character caught in a web of corporate espionage and existential questioning.",
@@ -44,8 +44,7 @@ export const films = [
         fullDescription: "A nostalgic journey through the golden years of Malayalam cinema, Varshangalkku Shesham follows two friends who travel to Madras with dreams of making it big in the film industry. Kalyani Priyadarshan delivers a touching performance as Annie, navigating the complexities of fame and relationships.",
         director: "Vineeth Sreenivasan",
         cast: ["Pranav Mohanlal", "Dhyan Sreenivasan", "Kalyani Priyadarshan"],
-        images: [
-            "https://upload.wikimedia.org/wikipedia/en/e/ed/Varshangalkku_Shesham_poster.jpg"
+        images: ["https://m.media-amazon.com/images/M/MV5BNjA0NDlmZDctNDg3NS00OWU5LWEyNTQtZGQ1MGMyZjM1NDAyXkEyXkFqcGc@._V1_FMjpg_UY2048_.jpg"
         ]
     },
     {
@@ -61,7 +60,7 @@ export const films = [
         director: "Manu C Kumar",
         cast: ["Kalyani Priyadarshan", "Femina George", "Shaheen Siddique"],
         images: [
-            "https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/Sesham_Mike-il_Fathima.jpg/220px-Sesham_Mike-il_Fathima.jpg"
+            "https://m.media-amazon.com/images/M/MV5BMTZkNTJhMTgtZGI2NS00NTEyLWIwMTMtZWY5OTA2YWI4YmYwXkEyXkFqcGc@._V1_FMjpg_UX986_.jpg"
         ]
     },
     {
@@ -93,7 +92,7 @@ export const films = [
         director: "Khalid Rahman",
         cast: ["Tovino Thomas", "Kalyani Priyadarshan", "Shine Tom Chacko"],
         images: [
-            "https://wallpapercave.com/wp/wp14946305.jpg"
+            "https://m.media-amazon.com/images/M/MV5BYjgyMDA2ZTMtYzAyMS00YjQ2LWI2NTEtMDYxOWM5OTE5NTRkXkEyXkFqcGc@._V1_FMjpg_UX986_.jpg"
         ]
     },
     {
@@ -109,7 +108,7 @@ export const films = [
         director: "Prithviraj Sukumaran",
         cast: ["Mohanlal", "Prithviraj Sukumaran", "Kalyani Priyadarshan", "Meena"],
         images: [
-            "https://m.media-amazon.com/images/M/MV5BMjMwMjM5MDYtMGYxMi00MGRkLWFjMDgtOWYzZGM4OGY5NzIyXkEyXkFqcGdeQXVyMjkxNzQ1NDI@._V1_.jpg"
+            "https://m.media-amazon.com/images/M/MV5BMTgwNTBiMjEtNmJiNS00NWZlLTk3ZDUtMjQ5M2MwMGI2MTAxXkEyXkFqcGc@._V1_FMjpg_UY2048_.jpg"
         ]
     },
     {
@@ -141,7 +140,7 @@ export const films = [
         director: "Venkat Prabhu",
         cast: ["Silambarasan TR", "S. J. Suryah", "Kalyani Priyadarshan"],
         images: [
-            "https://wallpapercave.com/wp/wp8736868.jpg"
+            "https://m.media-amazon.com/images/M/MV5BMTJkYjFhMWYtNGMxMy00YzQ5LThkNWYtY2U2NGNkZGNiNWE3XkEyXkFqcGc@._V1_FMjpg_UX1080_.jpg"
         ]
     }
 ];

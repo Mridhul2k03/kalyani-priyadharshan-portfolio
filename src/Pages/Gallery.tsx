@@ -15,7 +15,7 @@ const Gallery = () => {
         { src: "https://wallpapercave.com/wp/wp4178769.jpg", category: "Movie-Still", aspect: "aspect-square" },
         { src: "https://4kwallpapers.com/images/walls/thumbs_3t/24814.jpg", category: "Event", aspect: "aspect-[3/2]" },
         { src: "https://wallpapercave.com/wp/wp11390727.jpg", category: "Action", aspect: "aspect-[2/3]" },
-        { src: "/kalyani.jpg", category: "Promo", aspect: "aspect-[3/4]" },
+        { src: "/kalyani.jpg", category: "Promo", aspect: "aspect-square" },
         { src: "https://wallpaperaccess.com/full/2514717.jpg", category: "Poster", aspect: "aspect-[2/3]" },
         { src: "https://is.zobj.net/image-server/v1/images?r=75EsUDNiHyeVneuWwL__Q4T11ylZ72S5nS3MwzoYxUrUXmWw1ej8vo-Q6NkDQqy8O23QKRvrHJ6vrQ0dYyBmpQsDLCGV_-cE6kWNb58_ptLrhedPl8JsyT9MNhzWCIgC86qe-V_jwN-H-ykVQy2_GGfuvquQBrSPfQ7WWj8yByUlqB_-s-_vZXYC01y_a0R-iDwHfSCdWdnImCfxwfzGmUEgeRbIuJOM5-NwoGwkmPayx_Hz1n85kKDICRU", category: "Aesthetic", aspect: "aspect-square" },
     ];
