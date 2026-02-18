@@ -26,9 +26,9 @@ const Contact = () => {
     const medi_urls = [
         { class: 'instagram' ,href:'https://www.instagram.com/kalyanipriyadarshan' },
         // { class: 'x-twitter' ,href:'' },
-        { class: 'facebook' ,href:'' },
-        { class: 'youtube' ,href:'' },
-        { class: 'threads' ,href:''}
+        { class: 'facebook' ,href:'https://www.facebook.com/Kalyanipriyadarsan/' },
+        // { class: 'youtube' ,href:'' },
+        { class: 'threads' ,href:'https://www.threads.com/@kalyanipriyadarshan'}
     ]
 
     return (
