@@ -1,5 +1,5 @@
 
-import { Play, Star, Calendar, Award } from 'lucide-react';
+import { Star, Calendar, Award } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { films } from '../Data/films';
 

@@ -1,6 +1,6 @@
 
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Calendar, Award, Star, User, Film as FilmIcon } from 'lucide-react';
+import { ArrowLeft, Calendar, Star, User, Film as FilmIcon } from 'lucide-react';
 import { films } from '../Data/films';
 import { useEffect } from 'react';
 
