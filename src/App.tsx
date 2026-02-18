@@ -9,15 +9,18 @@ import Contact from './Pages/Contact'
 import Films from './Pages/Films'
 import Awards from './Pages/Awards' // Added Import
 import FilmDetail from './Pages/FilmDetail'
-import { useState, useEffect } from 'react'
+import {useState} from 'react'
 import Loader from './Components/Loader'
 import ScrollToTop from './Components/ScrollToTop'
 
 function App() {
+
   const [loading, setLoading] = useState(true);
 
   if (loading) {
+
     return <Loader onComplete={() => setLoading(false)} />;
+
   }
 
   return (
