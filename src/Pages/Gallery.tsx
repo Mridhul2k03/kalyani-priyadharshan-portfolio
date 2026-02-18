@@ -6,18 +6,18 @@ const Gallery = () => {
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
     const images = [
-        { src: "https://wallpapercave.com/wp/wp12937666.jpg", category: "Photoshoot", aspect: "aspect-[2/3]" },
-        { src: "https://wallpapercave.com/wp/wp8353860.jpg", category: "Event", aspect: "aspect-square" },
-        { src: "https://wallpapercave.com/wp/wp8353842.jpg", category: "Movie-Still", aspect: "aspect-[3/4]" },
-        { src: "https://wallpapercave.com/wp/wp8353829.jpg", category: "Portrait", aspect: "aspect-[4/3]" },
+        { src: "https://www.tamilnow.com/movies/actresses/kalyani-priyadarshan/pic-kalyani-priyadarshan-indian-actress-3740.jpg", category: "Photoshoot", aspect: "aspect-[2/3]" },
+        { src: "https://m.media-amazon.com/images/M/MV5BMzU2ODFiNWMtOGMzMC00YjMxLTk3MDQtMGQ0ZWE1MDQxMWQwXkEyXkFqcGc@._V1_FMjpg_UX2160_.jpgp8353860.jpg", category: "Event", aspect: "aspect-square" },
+        { src: "https://www.tamilnow.com/movies/actresses/kalyani-priyadarshan/kalyani-priyadarshan-cinema-actress-aug-2019-image-4089.jpg", category: "Movie-Still", aspect: "aspect-[3/4]" },
+        { src: "https://m.media-amazon.com/images/M/MV5BNmZkYmM0M2UtNThkNS00ZTE2LWE3ZDgtZTUwOTJjN2VjMTEzXkEyXkFqcGc@._V1_FMjpg_UX2160_.jpg", category: "Photoshoot", aspect: "aspect-[3/4]" },
         { src: "https://4kwallpapers.com/images/walls/thumbs_3t/24807.jpg", category: "Photoshoot", aspect: "aspect-[3/4]" },
         { src: "https://wallpapercave.com/wp/wp6241025.jpg", category: "Candid", aspect: "aspect-[2/3]" },
         { src: "https://wallpapercave.com/wp/wp4178769.jpg", category: "Movie-Still", aspect: "aspect-square" },
         { src: "https://4kwallpapers.com/images/walls/thumbs_3t/24814.jpg", category: "Event", aspect: "aspect-[3/2]" },
         { src: "https://wallpapercave.com/wp/wp11390727.jpg", category: "Action", aspect: "aspect-[2/3]" },
-        { src: "https://wallpapercave.com/wp/wp9082857.jpg", category: "Promo", aspect: "aspect-[3/4]" },
-        { src: "https://wallpapercave.com/wp/wp13567838.jpg", category: "Poster", aspect: "aspect-[2/3]" },
-        { src: "https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?q=80&w=1000&auto=format&fit=crop", category: "Aesthetic", aspect: "aspect-square" },
+        { src: "/kalyani.jpg", category: "Promo", aspect: "aspect-[3/4]" },
+        { src: "https://wallpaperaccess.com/full/2514717.jpg", category: "Poster", aspect: "aspect-[2/3]" },
+        { src: "https://is.zobj.net/image-server/v1/images?r=75EsUDNiHyeVneuWwL__Q4T11ylZ72S5nS3MwzoYxUrUXmWw1ej8vo-Q6NkDQqy8O23QKRvrHJ6vrQ0dYyBmpQsDLCGV_-cE6kWNb58_ptLrhedPl8JsyT9MNhzWCIgC86qe-V_jwN-H-ykVQy2_GGfuvquQBrSPfQ7WWj8yByUlqB_-s-_vZXYC01y_a0R-iDwHfSCdWdnImCfxwfzGmUEgeRbIuJOM5-NwoGwkmPayx_Hz1n85kKDICRU", category: "Aesthetic", aspect: "aspect-square" },
     ];
 
     return (

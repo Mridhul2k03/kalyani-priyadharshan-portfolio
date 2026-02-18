@@ -1,5 +1,5 @@
 
-import { Mail, MapPin, Phone, Send, Instagram, Twitter, Facebook, Youtube } from 'lucide-react';
+import { Mail, MapPin, Phone, Send } from 'lucide-react';
 import { useState } from 'react';
 
 const Contact = () => {
@@ -22,6 +22,14 @@ const Contact = () => {
         alert("Thank you for your message! We'll get back to you soon.");
         setFormData({ name: '', email: '', subject: '', message: '' });
     };
+
+    const medi_urls = [
+        { class: 'instagram' ,href:'https://www.instagram.com/kalyanipriyadarshan' },
+/////////
+        { class: 'facebook' ,href:'' },
+        { class: 'youtube' ,href:'' },
+        { class: 'threads' ,href:''}
+    ]
 
     return (
         <div className="min-h-screen bg-background pt-20 bg-primary/5">
@@ -79,18 +87,11 @@ const Contact = () => {
                         <div>
                             <h2 className="text-2xl font-bold mb-6">Follow on Socials</h2>
                             <div className="flex gap-4">
-                                <a href="#" className="bg-muted hover:bg-primary hover:text-white transition-all p-4 rounded-full text-foreground duration-300 transform hover:scale-110">
-                                    <Instagram className="h-6 w-6" />
-                                </a>
-                                <a href="#" className="bg-muted hover:bg-primary hover:text-white transition-all p-4 rounded-full text-foreground duration-300 transform hover:scale-110">
-                                    <Twitter className="h-6 w-6" />
-                                </a>
-                                <a href="#" className="bg-muted hover:bg-primary hover:text-white transition-all p-4 rounded-full text-foreground duration-300 transform hover:scale-110">
-                                    <Facebook className="h-6 w-6" />
-                                </a>
-                                <a href="#" className="bg-muted hover:bg-primary hover:text-white transition-all p-4 rounded-full text-foreground duration-300 transform hover:scale-110">
-                                    <Youtube className="h-6 w-6" />
-                                </a>
+                                {medi_urls.map((url, index) => (
+                                    <a key={index} href={url.href} className="bg-muted hover:bg-primary hover:text-white transition-all p-4 rounded-full text-foreground duration-300 transform hover:scale-110" target='_blank'>
+                                        <i className={`fa-brands fa-${url.class} fa-xl`}></i>
+                                    </a>
+                                ))}
                             </div>
                         </div>
                     </div>

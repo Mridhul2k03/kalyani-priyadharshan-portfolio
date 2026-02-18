@@ -62,16 +62,7 @@ const Awards = () => {
     ];
 
     return (
-        <div className="min-h-screen bg-black text-white pt-20 overflow-x-hidden relative">
-            {/* Pink Gradient Overlay for Navbar Visibility */}
-            <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-primary/50 to-transparent z-10 pointer-events-none" />
-
-            {/* Background Elements */}
-            <div className="fixed inset-0 z-0 opacity-10 pointer-events-none">
-                <div className="absolute top-20 right-0 w-96 h-96 bg-primary rounded-full blur-[150px] animate-pulse" />
-                <div className="absolute bottom-0 left-0 w-96 h-96 bg-yellow-600 rounded-full blur-[150px] animate-pulse delay-700" />
-            </div>
-
+        <div className="pt-20 overflow-x-hidden relative">
             <div className="container mx-auto px-4 py-16 relative z-10">
                 {/* Header */}
                 <div className="text-center mb-20 animate-in fade-in slide-in-from-bottom-8 duration-700">

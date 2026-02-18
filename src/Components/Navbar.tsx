@@ -63,7 +63,7 @@ const Navbar = () => {
                     {/* Logo */}
                     <div className="flex items-center gap-2 font-bold text-2xl tracking-tighter cursor-pointer">
                         {/* <Film className="h-6 w-6" /> */}
-                        <span>KALYANI</span>
+                        <Link to="/"><span>KALYANI</span></Link>
                     </div>
 
                     {/* Desktop Navigation */}

@@ -2,12 +2,12 @@ import { Star, Award, Heart, ArrowRight } from "lucide-react";
 
 const About = () => {
     return (
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col">
             {/* Hero Section */}
             <section className="relative h-[90vh] w-full overflow-hidden flex items-end justify-start">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="https://images.lifestyleasia.com/wp-content/uploads/sites/7/2025/11/06184722/kalyani-hero-1600x900.jpg?tr=w-1366" // High-quality portrait
+                        src="https://4kwallpapers.com/images/walls/thumbs_3t/24812.jpg" // High-quality portrait
                         alt="Kalyani Priyadharshan Portrait"
                         className="w-full h-full object-cover object-top"
                     />
@@ -62,7 +62,7 @@ const About = () => {
                             </div>
                             <div className="bg-muted/30 p-8 rounded-2xl border border-border/50 flex flex-col items-center justify-center text-center hover:border-primary/30 transition-colors col-span-2">
                                 <Heart className="h-8 w-8 text-primary mb-3" />
-                                <span className="text-4xl font-bold text-primary mb-1">3M+</span>
+                                <span className="text-4xl font-bold text-primary mb-1">7M+</span>
                                 <span className="text-sm text-muted-foreground">Followers</span>
                             </div>
                         </div>
