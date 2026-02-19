@@ -104,7 +104,7 @@ const Navbar = () => {
                                             </div>
 
                                             <div className="mt-4 pt-3 border-t text-center">
-                                                <Link to="/films" className="text-sm font-medium text-primary hover:text-primary/80 transition-colors flex items-center justify-center gap-1 group/link">
+                                                <Link to="/films" onClick={() => setIsOpen(false)}className="text-sm font-medium text-primary hover:text-primary/80 transition-colors flex items-center justify-center gap-1 group/link">
                                                     View All Films
                                                     <ArrowRight className="h-4 w-4 transition-transform group-hover/link:translate-x-1" />
                                                 </Link>
@@ -114,9 +114,11 @@ const Navbar = () => {
                                 )}
                             </div>
                         ))}
-                        <button className="px-4 py-2 text-sm font-medium text-primary-foreground bg-primary rounded-md hover:bg-primary/90 transition-colors">
-                            Book Tickets
-                        </button>
+                        <a href="https://in.bookmyshow.com/movies/kozhikode/lokah-chapter-1-chandra/ET00456016" target="_blank">
+                            <button className="px-4 py-2 text-sm font-medium text-primary-foreground bg-primary rounded-md hover:bg-primary/90 transition-colors">
+                                Book Tickets
+                            </button>
+                        </a>
                     </div>
 
                     {/* Mobile Toggle */}
@@ -178,7 +180,7 @@ const Navbar = () => {
                                                 </div>
                                             ))}
                                             <div className="mt-2 pt-2 border-t text-center">
-                                                <Link to={"films"} className="text-sm font-medium text-primary hover:text-primary/80 transition-colors flex items-center justify-center gap-1 group/link py-2">
+                                                <Link to={"films"} onClick={() => setIsOpen(false)} className="text-sm font-medium text-primary hover:text-primary/80 transition-colors flex items-center justify-center gap-1 group/link py-2">
                                                     View All Films
                                                     <ArrowRight className="h-4 w-4 transition-transform group-hover/link:translate-x-1" />
                                                 </Link>
@@ -188,9 +190,11 @@ const Navbar = () => {
                                 )}
                             </div>
                         ))}
-                        <button className="w-full py-3 text-center font-medium text-primary-foreground bg-primary rounded-md mt-4">
-                            Book Tickets
-                        </button>
+                        <a href="https://in.bookmyshow.com/movies/kozhikode/lokah-chapter-1-chandra/ET00456016" target="_blank">
+                            <button className="w-full py-3 text-center font-medium text-primary-foreground bg-primary rounded-md mt-4">
+                                Book Tickets
+                            </button>
+                        </a>
                     </div>
                 </div>
             )}

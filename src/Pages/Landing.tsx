@@ -32,10 +32,12 @@ const Landing = () => {
                             prominent Indian actress who primarily works in Malayalam, Tamil, and Telugu cinema.
                         </p>
                         <div className="flex flex-col sm:flex-row items-center justify-start gap-4">
-                            <button className="h-12 px-8 rounded-full bg-primary text-primary-foreground font-semibold text-lg hover:bg-primary/90 transition-all flex items-center gap-2 shadow-lg shadow-primary/25 hover:scale-105 active:scale-95">
-                                <Play className="h-5 w-5 fill-current" />
-                                Start Watching
-                            </button>
+                            <a href="https://www.hotstar.com/in/movies/lokah-chapter-1-chandra/1271499938?search_query=lokha" target="_blank">
+                                <button className="h-12 px-8 rounded-full bg-primary text-primary-foreground font-semibold text-lg hover:bg-primary/90 transition-all flex items-center gap-2 shadow-lg shadow-primary/25 hover:scale-105 active:scale-95">
+                                    <Play className="h-5 w-5 fill-current" />
+                                    Start Watching
+                                </button>
+                            </a>
                             <button className="h-12 px-8 rounded-full bg-white/10 text-white font-semibold text-lg border border-white/20 hover:bg-white/20 backdrop-blur-md transition-all flex items-center gap-2 hover:scale-105 active:scale-95">
                                 <Info className="h-5 w-5" />
                                 Learn More
