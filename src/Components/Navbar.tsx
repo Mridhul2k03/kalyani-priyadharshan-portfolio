@@ -82,30 +82,46 @@ const Navbar = () => {
 
                                 {/* Dropdown Menu */}
                                 {link.hasDropdown && (
-                                    <div className="absolute top-16 left-1/2 -translate-x-1/2 w-[600px] hidden group-hover:block pt-2">
-                                        <div className="bg-popover border rounded-lg shadow-lg overflow-hidden p-4 animate-in fade-in zoom-in-95 duration-200">
-                                            <div className="grid grid-cols-2 gap-4">
-                                                {films.map((film, index) => (
-                                                    <div key={index} className={`group/item relative rounded-md overflow-hidden bg-muted ${index === 0 ? 'col-span-2 aspect-[2/1]' : 'aspect-video'}`}>
-                                                        <img
-                                                            src={film.image}
-                                                            alt={film.title}
-                                                            className="object-cover w-full h-full transition-transform duration-500 group-hover/item:scale-105"
-                                                        />
-                                                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-4 flex flex-col justify-end">
-                                                            <span className="text-xs text-white/80 font-medium mb-1">{film.category}</span>
-                                                            <h4 className="text-white font-bold">{film.title}</h4>
-                                                            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover/item:opacity-100 transition-opacity bg-black/40">
-                                                                <PlayCircle className="text-white h-10 w-10" />
+                                    <div className="absolute top-16 left-1/2 -translate-x-1/2 w-[400px] hidden group-hover:block pt-2">
+                                        <div className="bg-popover/95 backdrop-blur-xl border border-border/50 rounded-xl shadow-2xl overflow-hidden animate-in fade-in slide-in-from-top-4 duration-300">
+                                            <div className="p-2">
+                                                <div className="px-3 py-2">
+                                                    <h3 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Featured Projects</h3>
+                                                </div>
+                                                <div className="flex flex-col gap-1">
+                                                    {films.map((film, index) => (
+                                                        <Link
+                                                            key={index}
+                                                            to="/films"
+                                                            className="flex items-center gap-4 p-2 rounded-lg hover:bg-muted transition-all duration-300 group/item"
+                                                        >
+                                                            <div className="h-16 w-24 rounded-md overflow-hidden shrink-0 relative shadow-sm">
+                                                                <img
+                                                                    src={film.image}
+                                                                    alt={film.title}
+                                                                    className="object-cover w-full h-full transition-transform duration-500 group-hover/item:scale-110"
+                                                                />
+                                                                <div className="absolute inset-0 bg-black/20 group-hover/item:bg-transparent transition-colors" />
+                                                                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover/item:opacity-100 transition-opacity">
+                                                                    <PlayCircle className="text-white h-8 w-8 drop-shadow-md" />
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                ))}
+                                                            <div className="flex flex-col flex-1 overflow-hidden">
+                                                                <span className="font-semibold text-sm text-foreground group-hover/item:text-primary transition-colors truncate">{film.title}</span>
+                                                                <span className="text-xs text-muted-foreground truncate mt-1">{film.category}</span>
+                                                            </div>
+                                                        </Link>
+                                                    ))}
+                                                </div>
                                             </div>
 
-                                            <div className="mt-4 pt-3 border-t text-center">
-                                                <Link to="/films" onClick={() => setIsOpen(false)}className="text-sm font-medium text-primary hover:text-primary/80 transition-colors flex items-center justify-center gap-1 group/link">
-                                                    View All Films
+                                            <div className="p-3 bg-muted/30 border-t border-border/50">
+                                                <Link
+                                                    to="/films"
+                                                    onClick={() => setIsOpen(false)}
+                                                    className="w-full flex items-center justify-center gap-2 text-sm font-medium text-foreground hover:text-primary transition-colors group/link p-2.5 bg-background shadow-sm border border-border/50 rounded-md hover:border-primary/50"
+                                                >
+                                                    View Full Portfolio
                                                     <ArrowRight className="h-4 w-4 transition-transform group-hover/link:translate-x-1" />
                                                 </Link>
                                             </div>
