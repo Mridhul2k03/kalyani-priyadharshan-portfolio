@@ -64,6 +64,9 @@ const Awards = () => {
 
     return (
         <div className="pt-20 overflow-x-hidden relative">
+            
+            <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-primary/50 to-transparent z-0 pointer-events-none" />
+
             <div className="container mx-auto px-4 py-16 relative z-10">
                 {/* Header */}
                 <Reveal>

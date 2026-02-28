@@ -7,6 +7,8 @@ import Reveal from '../Components/Reveal';
 const Films = () => {
     return (
         <div className="pt-20 overflow-x-hidden">
+            <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-primary/50 to-transparent z-0 pointer-events-none" />
+
             {/* Hero Section */}
             <div className="relative z-10 container mx-auto px-4 py-20 text-center">
                 <Reveal>
